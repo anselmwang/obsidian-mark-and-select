@@ -5,18 +5,20 @@ export default class AdvancedSelectionPlugin extends Plugin {
 
 	async onload() {
 		this.addCommand({
-			id: 'set-one-end-of-selection',
-			name: 'Set one end of selection',
+			id: 'set-mark',
+			name: 'Set mark',
 			icon: 'pencil',
+			hotkeys: [{modifiers: ['Ctrl', 'Shift'], key: '2'}],
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				console.log(editor.getCursor());
 				this.one_end_position= editor.getCursor();
 			}
 		});
 		this.addCommand({
-			id: 'select',
-			name: 'Select from one end',
+			id: 'select-from-mark',
+			name: 'Select from mark',
 			icon: 'up-and-down-arrows',
+			hotkeys: [{modifiers: ['Ctrl', 'Shift'], key: '3'}],
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				if(this.one_end_position != null)
 				{
