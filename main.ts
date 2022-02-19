@@ -41,6 +41,7 @@ export default class AdvancedSelectionPlugin extends Plugin {
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				console.log(editor.getCursor());
 				this.one_end_position= editor.getCursor();
+				// this technique is learnt from "https://github.com/esm7/obsidian-vimrc-support/blob/master/main.ts"
 				const cm = this.getCodeMirror(view);
 				cm.on("cursorActivity", (cm: CodeMirror.Editor) =>
 				{
