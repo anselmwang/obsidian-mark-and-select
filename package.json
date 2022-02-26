@@ -1,6 +1,6 @@
 {
-	"name": "obsidian-advanced-selection",
-	"version": "1.0.1",
+	"name": "obsidian-mark-and-select",
+	"version": "1.0.2",
 	"description": "More flexible ways to select texts in Obsidian Editor",
 	"main": "main.js",
 	"scripts": {

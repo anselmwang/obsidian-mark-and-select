@@ -1,4 +1,4 @@
-# Advanced Selection
+# Mark and Select
 
 This is a Obsidian plug in, provides flexible commands to select a region of text.
 

@@ -1,6 +1,6 @@
 import { Editor, EditorPosition, MarkdownView, Plugin } from 'obsidian';
 
-export default class AdvancedSelectionPlugin extends Plugin {
+export default class MarkAndSelectPlugin extends Plugin {
 	one_end_position: EditorPosition;
 
 	async onload() {
